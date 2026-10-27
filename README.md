@@ -3,7 +3,7 @@ Profile README for https://github.com/Kiran8501
 Keep claims aligned with projects and experience that can be demonstrated in repositories.
 -->
 
-<h1 align="center">Sai Kiran</h1>
+<h1 align="center">Sai Kiran Ande</h1>
 <h3 align="center">Cybersecurity Analyst | SOC Operations | Threat Detection & Network Forensics</h3>
 
 <p align="center">
