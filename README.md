@@ -16,67 +16,82 @@ Keep claims aligned with projects and experience that can be demonstrated in rep
 
 ## Professional Profile
 
-Cybersecurity postgraduate with **SOC internship experience** and a foundation in computer science. Interested in security operations, SIEM monitoring, alert triage, network traffic analysis, vulnerability assessment, and incident investigation.
+Cybersecurity postgraduate with SOC internship experience and a computer science background, focused on security operations, SIEM monitoring, alert triage, network traffic analysis, vulnerability assessment, and incident investigation.
 
-My approach is evidence-driven: understand the alert, validate the available telemetry, document findings, identify limitations, and recommend practical remediation. I use this GitHub portfolio to document hands-on labs, security tooling, and research in a reproducible and transparent way.
+My investigation approach is evidence-driven: validate an alert against available telemetry, establish a timeline, assess likely impact, document supporting evidence, and recommend remediation. This portfolio highlights practical labs, security tooling, and research with clear scope and reproducible steps.
 
-## Core Skills
+## Technical Toolkit
 
-| Domain | Tools / Areas |
+| Area | Technologies and technical focus |
 |---|---|
-| SOC & SIEM | Splunk, security log analysis, alert investigation |
-| Network analysis | Wireshark, Nmap, TCP/IP traffic analysis |
-| Vulnerability assessment | OpenVAS, vulnerability identification and reporting |
-| Web security testing | Burp Suite, authorized web application testing |
-| Security testing labs | Kali Linux, Metasploit Framework |
-| Scripting & data analysis | Python, Pandas, NumPy |
-| Machine learning & explainability | Scikit-learn, Logistic Regression, SHAP |
+| SOC operations & SIEM | Splunk, event/log analysis, alert triage, investigation notes |
+| Network security | Wireshark, Nmap, TCP/IP fundamentals, packet and traffic analysis |
+| Vulnerability assessment | OpenVAS, vulnerability identification, risk-aware reporting |
+| Web application security | Burp Suite, request/response inspection, authorized testing |
+| Security testing labs | Kali Linux, Metasploit Framework, controlled lab environments |
+| Scripting & data handling | Python, Pandas, NumPy |
+| Machine learning | Scikit-learn, Logistic Regression, binary classification, evaluation metrics |
+| Explainable AI | SHAP, feature importance, record-level prediction explanations |
+| Research workflow | CICIDS2017, data cleaning, encoding, feature preparation, scaling, confusion-matrix analysis |
 
-## Research Project
+## SOC Investigation Workflow
 
-### Explainable Data Exfiltration Forensics
+The workflow I aim to demonstrate in lab documentation is:
+
+1. **Alert intake** — record the alert source, timestamp, affected asset, and reason for investigation.
+2. **Evidence collection** — review relevant SIEM events, authentication records, endpoint/network telemetry, and packet captures when available.
+3. **Triage and validation** — compare event context, timestamps, source/destination details, and related activity to distinguish suspicious behavior from benign activity.
+4. **Scoping and timeline** — identify related events and summarize the sequence of observed activity without assuming facts not supported by logs.
+5. **MITRE ATT&CK mapping** — map behavior to a technique only when the evidence supports that interpretation.
+6. **Response and reporting** — document severity rationale, evidence, limitations, recommended containment, remediation, and follow-up checks.
+
+> This is a learning and documentation framework, not a claim that every step has been automated or performed in a production SOC.
+
+## Research Project: Explainable Data Exfiltration Forensics
 
 **Research title:** *An Explainable and Adaptive Multi-Model Learning Framework for Generalized Data Exfiltration Forensics*
 
-- Worked with the CICIDS2017 network traffic dataset for the research implementation.
-- Used data cleaning, encoding, feature preparation, and scaling as part of the preprocessing workflow.
-- Implemented **Logistic Regression** as the primary binary classification model.
-- Applied **SHAP (SHapley Additive Explanations)** to examine feature importance and explain individual predictions.
-- Evaluated classification using metrics including accuracy, precision, recall, F1 score, and a confusion matrix.
+- Dataset: CICIDS2017 network traffic benchmark.
+- Preprocessing: data cleaning, label encoding, feature preparation, and scaling.
+- Implemented classifier: **Logistic Regression** for binary classification.
+- Explainability: **SHAP (SHapley Additive Explanations)** for feature-importance analysis and explanations of individual predictions.
+- Evaluation: accuracy, precision, recall, F1 score, and confusion-matrix analysis.
+- Tools: Python, Pandas, NumPy, Scikit-learn, Matplotlib, SHAP, and Jupyter Notebook.
 
-**Scope note:** The adaptive multi-model framework is a proposed future direction; the implemented research model used Logistic Regression. Results should be interpreted in the context of the dataset, preprocessing choices, and experimental setup.
+**Scope and limitations:** The adaptive multi-model framework is a proposed future direction. The implemented research used Logistic Regression as the primary model. Findings should be interpreted within the dataset, preprocessing choices, class distribution, and experimental environment; benchmark performance alone does not establish production readiness.
 
 ## Practical Security Experience
 
 ### SOC Internship
 
-Hands-on internship exposure to security and network tools, including Splunk, Nmap, OpenVAS, Wireshark, Burp Suite, Metasploit Framework, and Kali Linux.
+Internship exposure to security and network tools including Splunk, Nmap, OpenVAS, Wireshark, Burp Suite, Metasploit Framework, and Kali Linux.
 
-I am continuing to strengthen my investigation workflow through documented practice, lab exercises, and security projects. Tool exposure should not be interpreted as production ownership or advanced proficiency in every tool.
+I am continuing to build repeatable investigation practice through lab exercises and written analysis. Tool exposure does not imply advanced proficiency or production ownership of every tool.
 
 ## Portfolio Projects
 
-- **Image Forgery Detection** — [View repository](https://github.com/Kiran8501/Image-forgery-detection). Existing project repository; see its code and documentation for implementation details.
-- **Data Exfiltration Forensics** — research project described above. A dedicated public code repository can be linked here once published and verified.
-- **SOC Investigation Labs** — planned portfolio area for safe sample logs, alert triage notes, investigation timelines, detection logic, and remediation guidance.
+- **Image Forgery Detection** — [View repository](https://github.com/Kiran8501/Image-forgery-detection). Refer to the repository code and documentation for the verified implementation details.
+- **Data Exfiltration Forensics** — research project described above. A dedicated code repository can be linked here when its implementation is published.
+- **SOC Alert Investigation Lab** — intended portfolio work covering safe sample authentication logs, Splunk searches, investigation notes, and incident-report templates. Only completed and tested artifacts should be described as implemented.
 
 ## Education
 
 - **M.Tech, Cybersecurity** — completed August 2026
 - **B.Tech, Computer Science and Engineering** — 2019–2023
 
-## What I’m Building Toward
+## Current Technical Learning Goals
 
-- SIEM investigation and alert triage workflows
-- Network traffic and log analysis
-- Python-assisted security analysis
-- Detection logic mapped to relevant MITRE ATT&CK techniques
-- Clear incident reports with evidence, impact, and remediation steps
+- Improve SPL searches for filtering, aggregation, time-based analysis, and alert investigation.
+- Practice network protocol analysis and correlation of events across available logs.
+- Build Python utilities for parsing and summarizing security events, with tests and documented limitations.
+- Learn to map validated findings to relevant MITRE ATT&CK techniques.
+- Produce concise incident reports with evidence, impact, confidence, and actionable remediation.
 
-## Working Principles
+## Security and Documentation Principles
 
 - Test only systems and environments where authorization is explicit.
-- Never publish credentials, private logs, or sensitive incident data.
+- Use synthetic or sanitized data in public demonstrations.
+- Never publish credentials, private logs, or sensitive incident information.
 - Document assumptions, reproducible steps, limitations, and remediation.
 - Prefer verifiable evidence over unsupported claims.
 
