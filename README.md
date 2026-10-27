@@ -70,9 +70,9 @@ I am continuing to build repeatable investigation practice through lab exercises
 
 ## Portfolio Projects
 
-- **Image Forgery Detection** — [View repository](https://github.com/Kiran8501/Image-forgery-detection). Refer to the repository code and documentation for the verified implementation details.
+- **SOC Alert Investigation Lab** — [Open project](https://github.com/Kiran8501/Kiran8501/tree/main/projects/soc-alert-investigation-lab). Includes synthetic authentication/DNS/network events, SPL searches, a triage playbook, and an incident report template. Lab data is synthetic; complete the searches and document your own results before claiming hands-on execution.
+- **Image Forgery Detection** — [View repository](https://github.com/Kiran8501/Image-forgery-detection). Refer to the repository code and documentation for verified implementation details.
 - **Data Exfiltration Forensics** — research project described above. A dedicated code repository can be linked here when its implementation is published.
-- **SOC Alert Investigation Lab** — intended portfolio work covering safe sample authentication logs, Splunk searches, investigation notes, and incident-report templates. Only completed and tested artifacts should be described as implemented.
 
 ## Education
 
